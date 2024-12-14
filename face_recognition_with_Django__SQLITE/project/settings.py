@@ -46,7 +46,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join("C:\\Users\\Vivek\Desktop\\main_Face_API\\reat_api 2\\face_recognition_with_Django\core\\templates")],
+        'DIRS': [BASE_DIR / 'core' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -58,6 +58,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'project.wsgi.application'
 
@@ -110,6 +111,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # This will collect static files in this directory during deployment
 STATIC_URL = '/static/'
 
 
