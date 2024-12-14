@@ -1,0 +1,47 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Virtual environment
+env/
+venv/
+ENV/
+.venv/
+
+# Distribution / packaging
+*.egg
+*.egg-info
+dist/
+build/
+pip-wheel-metadata/
+
+# Test and coverage reports
+*.coverage
+*.coverage.*
+*.hypothesis/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# Python specific
+*.bak
+*.orig
+*.rej
+*.log
+*.pot
+*.mo
